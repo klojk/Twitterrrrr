@@ -1,10 +1,19 @@
 require 'twitter'
 
+p "consumer_key stp ?"
+twitter_consumer_key = gets.chomp
+p "consumer_secret stp ?"
+twitter_consumer_secret = gets.chomp
+p "consumer_token stp ?"
+twitter_consumer_token = gets.chomp
+p "consumer_token_secret stp ?"
+twitter_consumer_token_secret = gets.chomp
+
 	client = Twitter::REST::Client.new do |config|
-  config.consumer_key        = "84Ds7TlJh4RAV4zHIUatyOgUJ"
-  config.consumer_secret     = "vTdyMjiRZl9dXlpLD0XPfMsBd67GKEB4ZhIJNHcNr7u9sQKv6Y"
-  config.access_token        = "953597158002970624-4C5XwdKKD5nNapnwzSKhEsYpLWNFbbM"
-  config.access_token_secret = "xwDkLIEdWrD0SbBLxFLZ2O9MQ6DxGEHlWhX4wK6hCdz0f"
+  config.consumer_key        = twitter_consumer_key
+  config.consumer_secret     = twitter_consumer_secret
+  config.access_token        = twitter_consumer_token
+  config.access_token_secret = twitter_consumer_token_secret
 end
 
 #client1.update("gcyi")
