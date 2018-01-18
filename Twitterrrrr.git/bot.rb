@@ -1,4 +1,5 @@
 require 'twitter'
+require "pry"
 
 p "consumer_key stp ?"
 twitter_consumer_key = gets.chomp
@@ -26,3 +27,4 @@ liste_journalistes.each do |user|
 client.update (user + " Je suis élève à The Hacking Projet une formation gratuite au code et je viens de faire un bot Twitter trop cool")
 end
 
+binding.pry
